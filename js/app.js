@@ -1,5 +1,5 @@
 // Define chart constants
-var chartWidth     = 800;
+var chartWidth     = 400;
 var chartHeight    = 400;
 var padding        = 25;
 
@@ -14,7 +14,7 @@ var x_scale          = d3.scaleLinear()
     .range([padding, chartWidth-padding]);
 
 var y_scale          = d3.scaleLinear()
-    .domain([0, 3])
+    .domain([0, 4])
     .range([chartHeight-padding, padding]);
 
 svg.append('path')
