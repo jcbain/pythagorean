@@ -14,7 +14,7 @@ var x_scale          = d3.scaleLinear()
     .range([padding, chartWidth-padding]);
 
 var y_scale          = d3.scaleLinear()
-    .domain([0, 4])
+    .domain([0, 3])
     .range([chartHeight-padding, padding]);
 
 svg.append('path')
@@ -22,4 +22,5 @@ svg.append('path')
          'M ' + x_scale(0) + ' ' + y_scale(0) +
          ' L ' + x_scale(4) + ' ' + y_scale(0) +
          ' L ' + x_scale(0) + ' ' + y_scale(3)
-       );
+       )
+    .attr('fill', '#12b978');
